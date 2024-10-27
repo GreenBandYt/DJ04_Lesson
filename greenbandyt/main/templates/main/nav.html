@@ -1,7 +1,14 @@
-<ul>
-    <li><a href="">Главная</a></li>
-    <li><a href="">Страница 2</a></li>
-    <li><a href="">Страница 3</a></li>
-    <li><a href="">Страница 4</a></li>
-
+<ul class="nav flex-column">
+    <li class="nav-item">
+        <a class="nav-link text-dark" href="{% url 'index' %}"> Главная </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" href="{% url 'new' %}"> Новые возможности </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" href="{% url 'data' %}"> Работа с данными </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" href="{% url 'test' %}"> Тестирование </a>
+    </li>
 </ul>

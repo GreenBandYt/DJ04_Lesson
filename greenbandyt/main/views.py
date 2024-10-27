@@ -8,7 +8,7 @@ def new(request):
     return render(request, 'main/new.html')
 
 def data(request):
-    return HttpResponse("<h1>А это страница где будут данные </h1>")
+    return render(request, 'main/data.html')
 
 def test(request):
-    return HttpResponse("<h1>А это страница для результатов теста </h1>")
+    return render(request, 'main/test.html')
