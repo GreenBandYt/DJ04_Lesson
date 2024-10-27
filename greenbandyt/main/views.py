@@ -6,3 +6,9 @@ def index(request):
 
 def new(request):
     return HttpResponse("<h1>Вторая страница проекта на ДЖАНГО </h1>")
+
+def data(request):
+    return HttpResponse("<h1>А это страница где будут данные </h1>")
+
+def test(request):
+    return HttpResponse("<h1>А это страница для результатов теста </h1>")
