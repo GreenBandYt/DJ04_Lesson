@@ -7,3 +7,11 @@ class News_post(models.Model):
     text = models.TextField('Новость')
     date = models.DateTimeField('Дата публикации',auto_now_add=True)
     author = models.CharField('Автор',max_length=200)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'Новость'
+        verbose_name_plural = 'Новости'
+

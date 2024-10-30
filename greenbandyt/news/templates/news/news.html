@@ -6,7 +6,20 @@
 
 {% block content %}
 
-<h1>Добро пожаловать на страницу новостей</h1>
+<h1 style="text-align: center; color: #333; font-weight: bold; font-size: 2em; margin-bottom: 20px;">
+    Добро пожаловать на страницу новостей
+</h1>
+<br>
+{% for new in news %}
+    <div style="border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; border-radius: 5px; background-color: #f9f9f9;">
+        <h2 style="color: #0073e6; font-size: 1.5em; margin-top: 0;">{{ new.title }}</h2>
+        <p style="font-style: italic; color: #555;">{{ new.short_description }}</p>
+        <p style="line-height: 1.6; color: #333;">{{ new.text }}</p>
+        <p style="font-size: 0.9em; color: #999; margin-top: 10px;">
+            Опубликовано: {{ new.date }} | Автор: {{ new.author }}
+        </p>
+    </div>
+{% endfor %}
 
 
 {% endblock %}
